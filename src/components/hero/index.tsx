@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Link } from "@mui/material";
 import {
   HeroWrapper,
   CtaWrapper,
@@ -7,7 +7,6 @@ import {
   Subtitle,
   ChainWrapper,
   ChainIcon,
-  ButtonWrapper,
   SocialWrapper,
   SocialIconLink,
   SocialIcon,
@@ -94,9 +93,14 @@ export default function Hero() {
           width: "100%",
         }}
       >
-        <ButtonWrapper>
-          <Button variant="contained">Go To App</Button>
-        </ButtonWrapper>
+        <Link
+          href="https://app.conveyor.finance"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <Button variant="contained">go to app</Button>
+        </Link>
         <SocialWrapper>
           {Object.values(Social).map((platform, index) => (
             <SocialIconLink
