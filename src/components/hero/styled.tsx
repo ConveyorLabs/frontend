@@ -14,7 +14,7 @@ export const HeroWrapper = styled.div`
   left: 35px;
   right: 35px;
   @media ${device.mobile} {
-    bottom: 30vh;
+    bottom: 20vh;
   }
   @media ${device.desktop} {
     bottom: 50px;

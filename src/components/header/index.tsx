@@ -59,7 +59,7 @@ export default function Header() {
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
-          <Button variant="contained">go to app</Button>
+          <Button variant="contained">Swap</Button>
         </Link>
       </NavigationLinks>
     </Wrapper>
