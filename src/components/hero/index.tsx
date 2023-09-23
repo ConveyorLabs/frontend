@@ -10,6 +10,7 @@ import {
   SocialWrapper,
   SocialIconLink,
   SocialIcon,
+  TextWrapper,
 } from "./styled";
 
 //svg images
@@ -71,7 +72,7 @@ const Chains = {
 export default function Hero() {
   return (
     <HeroWrapper>
-      <CtaWrapper>
+      <TextWrapper>
         <SuperTitle>MEET CONVEYOR 👋</SuperTitle>
         <Title>The Hyper-Efficient Protocol For Cheaper DEX Swaps</Title>
         <Subtitle>
@@ -83,23 +84,15 @@ export default function Hero() {
             <ChainIcon key={index} src={chain.icon} alt={chain.alt} />
           ))}
         </ChainWrapper>
-      </CtaWrapper>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
+      </TextWrapper>
+      <CtaWrapper>
         <Link
           href="https://app.conveyor.finance"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
-          <Button variant="contained">go to app</Button>
+          <Button variant="contained">Launch App</Button>
         </Link>
         <SocialWrapper>
           {Object.values(Social).map((platform, index) => (
@@ -113,7 +106,7 @@ export default function Hero() {
             </SocialIconLink>
           ))}
         </SocialWrapper>
-      </div>
+      </CtaWrapper>
     </HeroWrapper>
   );
 }

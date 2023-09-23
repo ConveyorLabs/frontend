@@ -24,11 +24,19 @@ export const HeroWrapper = styled.div`
   }
 `;
 
-export const CtaWrapper = styled.div`
+export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+`;
+
+export const CtaWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const SocialWrapper = styled.div`

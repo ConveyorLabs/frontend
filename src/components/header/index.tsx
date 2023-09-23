@@ -1,8 +1,9 @@
-import styled from "styled-components";
-import logo from "src/assets/svg/logo.svg";
-import Button from "@mui/material/Button";
 import * as React from "react";
-import { Link } from "@mui/material";
+import styled from "styled-components";
+import { Link as MuiLink } from "@mui/material";
+import Button from "@mui/material/Button";
+import logo from "src/assets/svg/logo.svg";
+import { device } from "src/device";
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,8 +19,6 @@ const Wrapper = styled.div`
   letter-spacing: -0.02em;
   font-size: 30px;
   color: white;
-  /* -webkit-backdrop-filter: blur(7px);
-backdrop-filter: blur(7px); */
 `;
 
 const NavigationLinks = styled.div`
@@ -29,12 +28,34 @@ const NavigationLinks = styled.div`
   align-items: center;
   gap: 15px;
   font-size: 16px;
+
+  @media ${device.mobile} {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+  }
+
+  @media ${device.tablet} {
+    right: 0px;
+    position: unset;
+  }
 `;
 
 const Logo = styled.div`
-  display: flex;
   height: 30px;
   width: 75px;
+
+  @media ${device.mobile} {
+    display: none;
+  }
+
+  @media ${device.tablet} {
+    display: flex;
+  }
+`;
+
+const StyledLink = styled(MuiLink)`
+  text-decoration: none;
 `;
 
 export default function Header() {
@@ -44,23 +65,21 @@ export default function Header() {
         <img src={logo} alt="Logo" />
       </Logo>
       <NavigationLinks>
-        <Link
+        <StyledLink
           href="https://docs.conveyor.finance"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
         >
           <Button variant="outlined">docs</Button>
-        </Link>
+        </StyledLink>
 
-        <Link
+        <StyledLink
           href="https://app.conveyor.finance"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
         >
-          <Button variant="contained">Swap</Button>
-        </Link>
+          <Button variant="contained">Launch App</Button>
+        </StyledLink>
       </NavigationLinks>
     </Wrapper>
   );
