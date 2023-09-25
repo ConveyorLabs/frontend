@@ -16,11 +16,9 @@ export const HeroWrapper = styled.div`
   bottom: 0;
   top: 0;
   background: url(${backgroundSvg}) center center / cover no-repeat;
-  @media ${device.desktop} {
-  }
 `;
 
-export const TextWrapper = styled.div`
+export const AbsolutePositionedFlexColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,6 +26,9 @@ export const TextWrapper = styled.div`
   position: absolute;
   left: 35px;
   right: 35px;
+`;
+
+export const TextWrapper = styled(AbsolutePositionedFlexColumn)`
   @media ${device.mobile} {
     bottom: 300px;
   }
@@ -36,14 +37,9 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const CtaWrapper = styled.div`
-  display: flex;
+export const CtaWrapper = styled(AbsolutePositionedFlexColumn)`
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  position: absolute;
-  left: 35px;
-  right: 35px;
   @media ${device.mobile} {
     bottom: 235px;
   }
@@ -52,9 +48,10 @@ export const CtaWrapper = styled.div`
   }
 `;
 
-export const SocialWrapper = styled.div`
+export const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 20px;
 `;
 
@@ -64,7 +61,6 @@ export const SuperTitle = styled.div`
   line-height: 15px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #ffffff;
 `;
 
 export const Title = styled.div`
@@ -92,27 +88,8 @@ export const Subtitle = styled.div`
   }
 `;
 
-export const ButtonWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-`;
-
 export const SocialIconLink = styled.a`
-  text-decoration-color: none;
   text-decoration: none;
-`;
-
-export const SocialIcon = styled.img``;
-
-export const ChainWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 `;
 
 export const ChainIcon = styled.img`

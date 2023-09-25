@@ -5,12 +5,10 @@ import {
   SuperTitle,
   Title,
   Subtitle,
-  ChainWrapper,
   ChainIcon,
-  SocialWrapper,
   SocialIconLink,
-  SocialIcon,
   TextWrapper,
+  FlexRow,
 } from "./styled";
 
 //svg images
@@ -79,11 +77,11 @@ export default function Hero() {
           Conveyor aggregates 100's of on-chain DEX's to provide the best prices
           for swaps.
         </Subtitle>
-        <ChainWrapper>
+        <FlexRow>
           {Object.values(Chains).map((chain, index) => (
             <ChainIcon key={index} src={chain.icon} alt={chain.alt} />
           ))}
-        </ChainWrapper>
+        </FlexRow>
       </TextWrapper>
       <CtaWrapper>
         <Link
@@ -94,7 +92,7 @@ export default function Hero() {
         >
           <Button variant="contained">Launch App</Button>
         </Link>
-        <SocialWrapper>
+        <FlexRow>
           {Object.values(Social).map((platform, index) => (
             <SocialIconLink
               key={index}
@@ -102,10 +100,11 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <SocialIcon src={platform.icon} alt={platform.alt} />
+              <img src={platform.icon} alt={platform.alt} />{" "}
+              {/* Updated from SocialIcon */}
             </SocialIconLink>
           ))}
-        </SocialWrapper>
+        </FlexRow>
       </CtaWrapper>
     </HeroWrapper>
   );
