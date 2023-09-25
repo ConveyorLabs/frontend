@@ -1,26 +1,22 @@
 import styled from "styled-components";
 import { device } from "src/device";
+import backgroundSvg from "src/assets/webp/background.webp";
 
 export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 100px;
   color: #ffffff;
   align-items: center;
   font-family: "Inter";
   font-style: normal;
   position: absolute;
-  left: 35px;
-  right: 35px;
-  @media ${device.mobile} {
-    bottom: 20vh;
-  }
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: url(${backgroundSvg}) center center / cover no-repeat;
   @media ${device.desktop} {
-    bottom: 50px;
-    left: 35px;
-    right: 35px;
-    align-items: flex-start;
   }
 `;
 
@@ -29,6 +25,15 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  @media ${device.mobile} {
+    bottom: 300px;
+  }
+  @media ${device.desktop} {
+    bottom: 100px;
+  }
 `;
 
 export const CtaWrapper = styled.div`
@@ -36,7 +41,15 @@ export const CtaWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  @media ${device.mobile} {
+    bottom: 235px;
+  }
+  @media ${device.desktop} {
+    bottom: 35px;
+  }
 `;
 
 export const SocialWrapper = styled.div`
