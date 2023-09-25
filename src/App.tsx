@@ -14,9 +14,9 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
-      <div style={{ width: "100vw", height: "fit-content", background: "red" }}>
+      {/* <div style={{ width: "100vw", height: "fit-content", background: "red" }}>
         test
-      </div>
+      </div> */}
     </PageWrapper>
   );
 };
