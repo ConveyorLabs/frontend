@@ -7,10 +7,6 @@ import Hero from "./components/hero";
 
 const PageWrapper = styled.div`
   background: #050529;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  position: relative;
 `;
 
 const App = () => {
@@ -18,6 +14,9 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
+      <div style={{ width: "100vw", height: "fit-content", background: "red" }}>
+        test
+      </div>
     </PageWrapper>
   );
 };

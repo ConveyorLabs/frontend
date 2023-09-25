@@ -10,11 +10,8 @@ export const HeroWrapper = styled.div`
   align-items: center;
   font-family: "Inter";
   font-style: normal;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  width: 100vw;
+  height: 100vh;
   background: url(${backgroundSvg}) center center / cover no-repeat;
 `;
 
