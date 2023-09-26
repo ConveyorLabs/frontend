@@ -6,7 +6,6 @@ import {
   Title,
   Subtitle,
   ChainIcon,
-  SocialIconLink,
   TextWrapper,
   FlexRow,
 } from "./styled";
@@ -90,19 +89,24 @@ export default function Hero() {
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
-          <Button variant="contained">Launch App</Button>
+          <Button size="large" variant="contained">
+            Launch App
+          </Button>
         </Link>
         <FlexRow>
           {Object.values(Social).map((platform, index) => (
-            <SocialIconLink
+            <Link
               key={index}
               href={platform.link}
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src={platform.icon} alt={platform.alt} />{" "}
-              {/* Updated from SocialIcon */}
-            </SocialIconLink>
+              <ChainIcon
+                style={{ height: "37px" }}
+                src={platform.icon}
+                alt={platform.alt}
+              />{" "}
+            </Link>
           ))}
         </FlexRow>
       </CtaWrapper>

@@ -6,7 +6,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 
 const PageWrapper = styled.div`
-  background: #050529;
+  background: #0e003d;
 `;
 
 const App = () => {
@@ -14,9 +14,6 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
-      {/* <div style={{ width: "100vw", height: "fit-content", background: "red" }}>
-        test
-      </div> */}
     </PageWrapper>
   );
 };

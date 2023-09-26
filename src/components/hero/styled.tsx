@@ -27,21 +27,25 @@ export const AbsolutePositionedFlexColumn = styled.div`
 
 export const TextWrapper = styled(AbsolutePositionedFlexColumn)`
   @media ${device.mobile} {
-    bottom: 300px;
+    top: 125px;
   }
   @media ${device.desktop} {
+    top: unset;
     bottom: 100px;
   }
 `;
 
 export const CtaWrapper = styled(AbsolutePositionedFlexColumn)`
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  bottom: 35px;
   @media ${device.mobile} {
-    bottom: 235px;
+    height: 125px;
+    flex-direction: column;
   }
   @media ${device.desktop} {
-    bottom: 35px;
+    height: unset;
+    flex-direction: row;
   }
 `;
 
@@ -49,7 +53,18 @@ export const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  width: fit-content;
+  @media ${device.mobile} {
+    align-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  @media ${device.desktop} {
+    align-self: flex-start;
+    justify-content: unset;
+    width: fit-content;
+    gap: 20px;
+  }
 `;
 
 export const SuperTitle = styled.div`
@@ -64,11 +79,7 @@ export const Title = styled.div`
   font-weight: 500;
   @media ${device.mobile} {
     width: 100%;
-    font-size: 30px;
-  }
-  @media ${device.tablet} {
-    width: 100%;
-    font-size: 5vw;
+    font-size: 35px;
   }
   @media ${device.desktop} {
     font-size: 50px;
@@ -78,19 +89,24 @@ export const Title = styled.div`
 
 export const Subtitle = styled.div`
   font-weight: normal;
-  font-size: 3vw;
   line-height: 150%;
+  @media ${device.desktop} {
+    font-size: 35px;
+  }
   @media ${device.desktop} {
     font-size: 25px;
   }
 `;
 
-export const SocialIconLink = styled.a`
-  text-decoration: none;
-`;
-
 export const ChainIcon = styled.img`
   width: 30px;
-  height: 30px;
   border-radius: 50%;
+  @media ${device.mobile} {
+    width: 50px;
+    height: 50px;
+  }
+  @media ${device.desktop} {
+    width: 30px;
+    height: 30px;
+  }
 `;
