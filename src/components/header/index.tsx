@@ -1,28 +1,31 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import logo from "src/assets/svg/logo.svg";
-import { Wrapper, Logo, NavigationLinks, StyledLink } from "./styled";
+import { Wrapper, Logo, NavigationLinks } from "./styled";
+import { Link } from "@mui/material";
 
 export default function Header() {
   return (
     <Wrapper>
       <Logo src={logo} alt="Logo" />
       <NavigationLinks>
-        <StyledLink
+        <Link
           href="https://docs.conveyor.finance"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
         >
           <Button variant="outlined">docs</Button>
-        </StyledLink>
+        </Link>
 
-        <StyledLink
+        <Link
           href="https://app.conveyor.finance"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
         >
           <Button variant="contained">Launch App</Button>
-        </StyledLink>
+        </Link>
       </NavigationLinks>
     </Wrapper>
   );

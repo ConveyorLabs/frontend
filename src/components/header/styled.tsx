@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { device } from "src/device";
-import { Link as MuiLink } from "@mui/material";
+import { Link, Link as MuiLink } from "@mui/material";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -46,8 +46,4 @@ export const Logo = styled.img`
   @media ${device.tablet} {
     display: block;
   }
-`;
-
-export const StyledLink = styled(MuiLink)`
-  text-decoration: none;
 `;
