@@ -11,8 +11,6 @@ export default function Header() {
       <NavigationLinks>
         <Link
           href="https://docs.conveyor.finance"
-          target="_blank"
-          rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
           <Button variant="outlined">docs</Button>
@@ -20,8 +18,6 @@ export default function Header() {
 
         <Link
           href="https://app.conveyor.finance"
-          target="_blank"
-          rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
           <Button variant="contained">Launch App</Button>
