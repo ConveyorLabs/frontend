@@ -103,7 +103,7 @@ export default function Hero() {
                 style={{ height: "37px" }}
                 src={platform.icon}
                 alt={platform.alt}
-              />{" "}
+              />
             </Link>
           ))}
         </FlexRow>
