@@ -11,6 +11,8 @@ export const HeroWrapper = styled.div`
   font-family: "Inter";
   font-style: normal;
   height: 100vh;
+  max-width: 1300px;
+  margin: auto;
   background: url(${backgroundSvg}) center center / cover no-repeat;
 `;
 
@@ -20,8 +22,10 @@ export const AbsolutePositionedFlexColumn = styled.div`
   align-items: flex-start;
   gap: 10px;
   position: absolute;
+  margin: 0 auto;
   left: 35px;
   right: 35px;
+  max-width: 1140px;
 `;
 
 export const TextWrapper = styled(AbsolutePositionedFlexColumn)`
@@ -82,7 +86,6 @@ export const Title = styled.div`
   }
   @media ${device.desktop} {
     font-size: 50px;
-    width: 60vw;
   }
 `;
 

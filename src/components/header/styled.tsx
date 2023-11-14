@@ -1,16 +1,16 @@
 import { styled } from "styled-components";
 import { device } from "src/device";
-import { Link, Link as MuiLink } from "@mui/material";
 
 export const Wrapper = styled.div`
   display: flex;
   position: absolute;
-  height: 36px;
-  top: 35px;
+  margin: 0 auto;
   left: 35px;
   right: 35px;
-  align-items: center;
+  top: 35px;
+  max-width: 1140px;
   justify-content: space-between;
+  //font settings
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;

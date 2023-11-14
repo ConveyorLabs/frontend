@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   margin: auto;
   color: white;
   text-align: center;
+  max-width: 1300px;
 `;
 
 export const Title = styled.div`
