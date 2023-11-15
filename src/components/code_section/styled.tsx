@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const CodeWrapper = styled.div`
   height: fit-content;
-  justify-content: center;
   margin: 0 auto;
   color: white;
   max-width: 1100px;

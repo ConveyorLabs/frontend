@@ -20,9 +20,9 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
-      <div style={{ height: "100px" }} />
+      <div style={{ height: "200px" }} />
       <Partners />
-      <div style={{ height: "100px" }} />
+      <div style={{ height: "200px" }} />
       <CodeSection />
     </PageWrapper>
   );

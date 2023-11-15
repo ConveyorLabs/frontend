@@ -3,7 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { codeString, codeString2 } from "./data";
 import { Title } from "../hero/styled";
-import { Button } from "@mui/material";
+import { Button, Link } from "@mui/material";
 
 type CodeSectionProps = {
   children: string;
@@ -37,7 +37,7 @@ export default function CodeSection() {
           display: "flex",
           flexDirection: "column",
           height: "250px",
-          maxWidth: "600px",
+          maxWidth: "800px",
           margin: "0 auto",
           color: "white",
         }}
@@ -61,12 +61,16 @@ export default function CodeSection() {
           Available on 6 EVM chains, add swap functionality to your telegram
           bot, website, or app in minutes.
         </Title>
-        <Button
-          variant="contained"
-          style={{ marginTop: "20px", width: "200px", alignSelf: "center" }}
+        <Link
+          href="https://docs.conveyor.finance/api"
+          style={{
+            textDecoration: "none",
+            marginTop: "25px",
+            alignSelf: "center",
+          }}
         >
-          Read the Docs
-        </Button>
+          <Button variant="contained">Check API Docs</Button>
+        </Link>
       </div>
       <CodeWrapper>
         <CodeSeparation>{codeString}</CodeSeparation>
