@@ -11,6 +11,7 @@ import {
 } from "./styled";
 
 import { Chains, Social } from "./data";
+import { ButtonGroup } from "../header";
 
 export default function Hero() {
   return (
@@ -29,14 +30,12 @@ export default function Hero() {
         </FlexRow>
       </TextWrapper>
       <CtaWrapper>
-        <Link
-          href="https://app.conveyor.finance"
-          style={{ textDecoration: "none" }}
-        >
-          <Button size="large" variant="contained">
-            Launch App
-          </Button>
-        </Link>
+        <ButtonGroup
+          text="Launch App"
+          url="https://app.conveyor.finance"
+          variant="contained"
+          size="large"
+        />
         <FlexRow>
           {Object.values(Social).map((platform, index) => (
             <Link

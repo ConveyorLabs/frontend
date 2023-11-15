@@ -1,4 +1,4 @@
-import { Button, Grid, Link } from "@mui/material";
+import { Grid, Link } from "@mui/material";
 import { partners, backers } from "./data";
 import {
   Name,
@@ -7,11 +7,11 @@ import {
   StyledGridItem,
   StyledImg,
   Title,
-  PartnersWrapper,
   StyledDiv2,
 } from "./styled";
 import React from "react";
 import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtle";
+import { FeatureWrapper } from "../styled";
 
 interface PartnerData {
   id?: string;
@@ -57,9 +57,9 @@ function PartnerGrid({ title, data }: PartnerGridProps) {
 
 export default function Partners() {
   return (
-    <PartnersWrapper>
+    <FeatureWrapper>
       <CenteredTitleAndSubtitle
-        title="Built For Users and Innovators"
+        title="Built For Traders and Innovators"
         subtitle="Our Aggregator is designed to seamlessly cater to retail, institutional, and developer needs, perfectly positioned to welcome the next billion users and innovators into the web3 ecosystem."
         buttonText="Swap Today"
         buttonUrl="https://app.conveyor.finance/"
@@ -68,6 +68,6 @@ export default function Partners() {
         <PartnerGrid title="Trusted By" data={partners} />
         <PartnerGrid title="Backed By" data={backers} />
       </StyledDiv2>
-    </PartnersWrapper>
+    </FeatureWrapper>
   );
 }

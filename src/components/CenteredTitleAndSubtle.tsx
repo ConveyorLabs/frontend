@@ -1,5 +1,5 @@
-import { Button, Link } from "@mui/material";
 import { Title } from "./hero/styled";
+import { ButtonGroup } from "./header";
 
 interface TitleAndSubtleProps {
   title: string;
@@ -42,16 +42,13 @@ export default function CenteredTitleAndSubtitle({
       >
         {subtitle}
       </Title>
-      <Link
-        href={buttonUrl}
-        style={{
-          textDecoration: "none",
-          marginTop: "25px",
-          alignSelf: "center",
-        }}
-      >
-        <Button variant="contained">{buttonText}</Button>
-      </Link>
+      <div style={{ height: "25px" }} />
+      <ButtonGroup
+        text={buttonText}
+        url={buttonUrl}
+        variant="contained"
+        size="large"
+      />
     </div>
   );
 }

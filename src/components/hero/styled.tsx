@@ -12,9 +12,8 @@ export const HeroWrapper = styled.div`
   font-family: "Inter";
   font-style: normal;
   height: 100vh;
-  margin: auto;
   margin: -35px -35px 0 -35px;
-  background: url(${backgroundSvg}) center center / cover no-repeat;
+  background: url(${backgroundSvg}) center / cover no-repeat;
 `;
 
 export const AbsolutePositionedFlexColumn = styled.div`

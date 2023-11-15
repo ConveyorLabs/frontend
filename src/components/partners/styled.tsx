@@ -2,15 +2,6 @@ import { Grid } from "@mui/material";
 import styled from "styled-components";
 import { device } from "src/device";
 
-export const PartnersWrapper = styled.div`
-  height: fit-content;
-  align-self: center;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
-  max-width: 1100px;
-`;
-
 export const Title = styled.div`
   font-family: Inter;
   font-size: 35px;

@@ -3,6 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { codeString, codeString2 } from "./data";
 import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtle";
+import { FeatureWrapper } from "../styled";
 
 type CodeSectionProps = {
   children: string;
@@ -30,19 +31,19 @@ function CodeSeparation({ children }: CodeSectionProps) {
 }
 export default function CodeSection() {
   return (
-    <div>
+    <FeatureWrapper>
       <CenteredTitleAndSubtitle
         title="Robust Swap API"
         subtitle="Our API is built to be robust and scalable to your fit your needs.
         Available on 6 EVM chains, add swap functionality to your telegram bot,
         website, or app in minutes."
         buttonText="Check API Docs"
-        buttonUrl="https://api.conveyor.finance/api"
+        buttonUrl="https://docs.conveyor.finance/api"
       />
       <CodeWrapper>
         <CodeSeparation>{codeString}</CodeSeparation>
         <CodeSeparation>{codeString2}</CodeSeparation>
       </CodeWrapper>
-    </div>
+    </FeatureWrapper>
   );
 }
