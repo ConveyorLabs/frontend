@@ -2,12 +2,13 @@ import { Grid, Link } from "@mui/material";
 import { partners, backers } from "./data";
 import {
   Name,
+  PartnerGridWrapper,
   StyledDiv,
   StyledGrid,
   StyledGridItem,
   StyledImg,
   Title,
-  Wrapper,
+  PartnersWrapper,
 } from "./styled";
 import React from "react";
 
@@ -39,24 +40,27 @@ const PartnerItem = React.memo(({ item }: PartnerItemProps) => (
 
 function PartnerGrid({ title, data }: PartnerGridProps) {
   return (
-    <StyledDiv>
+    <PartnerGridWrapper>
       <Title>{title}</Title>
-      <Grid container>
-        {data.map((item) => (
-          <PartnerItem key={item.id} item={item} />
-        ))}
-      </Grid>
-    </StyledDiv>
+      <br />
+      <StyledDiv>
+        <Grid container>
+          {data.map((item) => (
+            <PartnerItem key={item.id} item={item} />
+          ))}
+        </Grid>
+      </StyledDiv>
+    </PartnerGridWrapper>
   );
 }
 
 export default function Partners() {
   return (
-    <Wrapper>
+    <PartnersWrapper>
       <StyledGrid container>
         <PartnerGrid title="Trusted By" data={partners} />
         <PartnerGrid title="Backed By" data={backers} />
       </StyledGrid>
-    </Wrapper>
+    </PartnersWrapper>
   );
 }

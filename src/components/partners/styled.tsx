@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import styled from "styled-components";
 import { device } from "src/device";
 
-export const Wrapper = styled.div`
+export const PartnersWrapper = styled.div`
   padding: 30px 30px;
   box-sizing: border-box;
   height: fit-content;
@@ -32,7 +32,10 @@ export const StyledImg = styled.img`
   display: flex;
   height: 50px;
 `;
-
+export const PartnerGridWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 export const StyledGridItem = styled(Grid)`
   align-items: center;
   display: flex;
