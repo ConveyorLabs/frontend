@@ -71,10 +71,10 @@ export default function Hero() {
     <HeroWrapper>
       <TextWrapper>
         <SuperTitle>MEET CONVEYOR 👋</SuperTitle>
-        <Title>The Hyper-Efficient Protocol For Cheaper DEX Swaps</Title>
+        <Title>The Hyper-Efficient Ecosystem For Cheaper DEX Swaps</Title>
         <Subtitle>
-          Conveyor aggregates 100's of on-chain DEX's to provide the best prices
-          for swaps.
+          Conveyor meta-aggregates several aggregators and 100's of on-chain
+          DEX's in order to provide the best prices on swaps.
         </Subtitle>
         <FlexRow>
           {Object.values(Chains).map((chain, index) => (

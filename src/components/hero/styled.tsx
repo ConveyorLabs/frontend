@@ -83,7 +83,7 @@ export const Title = styled.div`
   font-weight: 500;
   @media ${device.mobile} {
     width: 100%;
-    font-size: 35px;
+    font-size: 25px;
   }
   @media ${device.desktop} {
     font-size: 50px;
