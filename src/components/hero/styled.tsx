@@ -13,7 +13,7 @@ export const HeroWrapper = styled.div`
   font-style: normal;
   height: 100vh;
   margin: -35px -35px 0 -35px;
-  background: url(${backgroundSvg}) center / cover no-repeat;
+  background: url(${backgroundSvg}) no-repeat center center;
 `;
 
 export const AbsolutePositionedFlexColumn = styled.div`
