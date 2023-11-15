@@ -4,11 +4,11 @@ import {
   Name,
   PartnerGridWrapper,
   StyledDiv,
-  StyledGrid,
   StyledGridItem,
   StyledImg,
   Title,
   PartnersWrapper,
+  StyledDiv2,
 } from "./styled";
 import React from "react";
 
@@ -57,10 +57,10 @@ function PartnerGrid({ title, data }: PartnerGridProps) {
 export default function Partners() {
   return (
     <PartnersWrapper>
-      <StyledGrid container>
+      <StyledDiv2>
         <PartnerGrid title="Trusted By" data={partners} />
         <PartnerGrid title="Backed By" data={backers} />
-      </StyledGrid>
+      </StyledDiv2>
     </PartnersWrapper>
   );
 }

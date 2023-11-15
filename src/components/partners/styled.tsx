@@ -3,14 +3,12 @@ import styled from "styled-components";
 import { device } from "src/device";
 
 export const PartnersWrapper = styled.div`
-  padding: 30px 30px;
-  box-sizing: border-box;
   height: fit-content;
   align-self: center;
-  margin: auto;
+  margin: 0 auto;
   color: white;
   text-align: center;
-  max-width: 1300px;
+  max-width: 1100px;
 `;
 
 export const Title = styled.div`
@@ -30,11 +28,12 @@ export const Name = styled.div`
 
 export const StyledImg = styled.img`
   display: flex;
-  height: 50px;
+  height: 48px;
 `;
 export const PartnerGridWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
 `;
 export const StyledGridItem = styled(Grid)`
   align-items: center;
@@ -54,9 +53,17 @@ export const StyledDiv = styled.div`
   border-radius: 10px;
 `;
 
-export const StyledGrid = styled(Grid)`
-  justify-content: center;
+export const StyledDiv2 = styled.div`
   display: flex;
   gap: 45px;
   width: 100%;
+  @media ${device.mobile} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media ${device.tablet} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;

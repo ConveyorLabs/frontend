@@ -5,10 +5,12 @@ import styled from "styled-components";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Partners from "./components/partners";
+import CodeSection from "./components/code_section";
 // import backgroundImage from "./assets/webp/fractal-background.webp";
 
 const PageWrapper = styled.div`
   background: #0e003d;
+  padding: 35px;
   /* background-image: backgroundImage; */
 `;
 
@@ -18,7 +20,10 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
+      <div style={{ height: "100px" }} />
       <Partners />
+      <div style={{ height: "100px" }} />
+      <CodeSection />
     </PageWrapper>
   );
 };

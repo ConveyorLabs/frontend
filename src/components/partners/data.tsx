@@ -70,7 +70,7 @@ export const backers = [
     name: "Insignius Capital",
     url: "https://insignius.capital",
     img: insignius,
-    text: "Insignius Capital",
+    text: "Insignius",
   },
   {
     name: "Orange DAO",
