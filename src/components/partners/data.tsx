@@ -67,16 +67,16 @@ export const backers = [
     text: "",
   },
   {
-    name: "300 DAO",
-    url: "https://300dao.xyz",
-    img: threehdao,
-    text: "",
-  },
-  {
     name: "Insignius Capital",
     url: "https://insignius.capital",
     img: insignius,
-    text: "Insignius",
+    text: "Insignius Capital",
+  },
+  {
+    name: "Orange DAO",
+    url: "https://www.orangedao.xyz",
+    img: orangedao,
+    text: "",
   },
   {
     name: "Quantstamp",
@@ -85,9 +85,9 @@ export const backers = [
     text: "Quantstamp",
   },
   {
-    name: "Orange DAO",
-    url: "https://www.orangedao.xyz",
-    img: orangedao,
+    name: "300 DAO",
+    url: "https://300dao.xyz",
+    img: threehdao,
     text: "",
   },
 ];

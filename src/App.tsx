@@ -12,6 +12,7 @@ const PageWrapper = styled.div`
   /* background-image: backgroundImage; */
 `;
 
+require("@fontsource/inter");
 const App = () => {
   return (
     <PageWrapper>

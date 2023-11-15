@@ -25,7 +25,7 @@ export const AbsolutePositionedFlexColumn = styled.div`
   margin: 0 auto;
   left: 35px;
   right: 35px;
-  max-width: 1140px;
+  max-width: 1150px;
 `;
 
 export const TextWrapper = styled(AbsolutePositionedFlexColumn)`

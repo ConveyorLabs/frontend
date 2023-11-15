@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   left: 35px;
   right: 35px;
   top: 35px;
-  max-width: 1140px;
+  max-width: 1150px;
   justify-content: space-between;
   //font settings
   font-family: "Work Sans";

@@ -43,3 +43,17 @@ export const StyledGridItem = styled(Grid)`
   gap: 5px;
   margin: 25px 0px;
 `;
+
+export const StyledDiv = styled.div`
+  width: 100%;
+  max-width: 550px;
+  border: white 1px solid;
+  border-radius: 10px;
+`;
+
+export const StyledGrid = styled(Grid)`
+  justify-content: center;
+  display: flex;
+  gap: 45px;
+  width: 100%;
+`;
