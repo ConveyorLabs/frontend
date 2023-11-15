@@ -3,6 +3,7 @@ import { device } from "src/device";
 import backgroundSvg from "src/assets/webp/background.webp";
 
 export const HeroWrapper = styled.div`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -12,7 +13,7 @@ export const HeroWrapper = styled.div`
   font-style: normal;
   height: 100vh;
   margin: auto;
-  margin-top: -35px;
+  margin: -35px -35px 0 -35px;
   background: url(${backgroundSvg}) center center / cover no-repeat;
 `;
 
