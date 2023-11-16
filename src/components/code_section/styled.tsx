@@ -7,6 +7,7 @@ export const CodeWrapper = styled.div`
   color: white;
   max-width: 1100px;
   display: flex;
+  text-align: left;
   @media ${device.mobile} {
     flex-direction: column;
     font-size: 15px;
