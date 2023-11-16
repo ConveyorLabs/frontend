@@ -11,7 +11,7 @@ import {
 } from "./styled";
 
 import { Chains, Social } from "./data";
-import { ButtonGroup } from "../header";
+import { ButtonGroup } from "../ButtonGroup";
 
 export default function Hero() {
   return (

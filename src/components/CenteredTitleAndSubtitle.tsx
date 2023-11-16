@@ -1,5 +1,5 @@
+import { ButtonGroup } from "./ButtonGroup";
 import { Title } from "./hero/styled";
-import { ButtonGroup } from "./header";
 import { styled } from "styled-components";
 
 interface TitleAndSubtleProps {
