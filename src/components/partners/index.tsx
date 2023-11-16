@@ -60,8 +60,8 @@ export default function Partners() {
     <FeatureWrapper>
       <CenteredTitleAndSubtitle
         title="Built For Traders and Innovators"
-        subtitle="Our Aggregator is designed to seamlessly cater to retail, institutional, and developer needs, perfectly positioned to welcome the next billion users and innovators into the web3 ecosystem."
-        buttonText="Swap Today"
+        subtitle="The Conveyor Aggregator is designed to seamlessly cater to retail, institutional, and developer needs, perfectly positioned to welcome the next billion users and innovators into the web3 ecosystem."
+        buttonText="Try A Swap"
         buttonUrl="https://app.conveyor.finance/"
       />
       <StyledDiv2>

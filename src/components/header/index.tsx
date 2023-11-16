@@ -9,7 +9,7 @@ interface ButtonGroupProps {
   url: string;
   variant: "outlined" | "contained";
   size: "small" | "medium" | "large";
-  allignment?: "flex-start" | "center" | "flex-end";
+  alignment?: "flex-start" | "center" | "flex-end";
 }
 
 export function ButtonGroup({
@@ -17,7 +17,7 @@ export function ButtonGroup({
   url,
   variant,
   size,
-  allignment,
+  alignment,
 }: ButtonGroupProps) {
   return (
     <Link
@@ -25,7 +25,7 @@ export function ButtonGroup({
       style={{ textDecoration: "none" }}
       target="_blank"
       rel="noreferrer noopener"
-      alignSelf={allignment}
+      alignSelf={alignment}
     >
       <Button variant={variant} size={size}>
         {text}
