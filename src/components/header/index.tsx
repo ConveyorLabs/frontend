@@ -12,20 +12,13 @@ interface ButtonGroupProps {
   alignment?: "flex-start" | "center" | "flex-end";
 }
 
-export function ButtonGroup({
-  text,
-  url,
-  variant,
-  size,
-  alignment,
-}: ButtonGroupProps) {
+export function ButtonGroup({ text, url, variant, size }: ButtonGroupProps) {
   return (
     <Link
       href={url}
       style={{ textDecoration: "none" }}
       target="_blank"
       rel="noreferrer noopener"
-      alignSelf={alignment}
     >
       <Button variant={variant} size={size}>
         {text}
