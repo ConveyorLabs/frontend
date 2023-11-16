@@ -10,7 +10,7 @@ import {
   StyledDiv2,
 } from "./styled";
 import React from "react";
-import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtle";
+import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtitle";
 import { FeatureWrapper } from "../styled";
 
 interface PartnerData {
@@ -64,6 +64,7 @@ export default function Partners() {
         buttonText="Try A Swap"
         buttonUrl="https://app.conveyor.finance/"
       />
+      <div style={{ height: "50px" }} />
       <StyledDiv2>
         <PartnerGrid title="Trusted By" data={partners} />
         <PartnerGrid title="Backed By" data={backers} />

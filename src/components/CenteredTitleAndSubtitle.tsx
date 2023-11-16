@@ -1,5 +1,6 @@
 import { Title } from "./hero/styled";
 import { ButtonGroup } from "./header";
+import { styled } from "styled-components";
 
 interface TitleAndSubtleProps {
   title: string;
@@ -8,6 +9,15 @@ interface TitleAndSubtleProps {
   buttonUrl: string;
 }
 
+const TitleSubtitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+`;
+
 export default function CenteredTitleAndSubtitle({
   title,
   subtitle,
@@ -15,16 +25,7 @@ export default function CenteredTitleAndSubtitle({
   buttonUrl,
 }: TitleAndSubtleProps) {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        height: "250px",
-        maxWidth: "800px",
-        margin: "0 auto",
-        color: "white",
-      }}
-    >
+    <TitleSubtitleWrapper>
       <Title
         style={{
           textAlign: "center",
@@ -49,6 +50,6 @@ export default function CenteredTitleAndSubtitle({
         variant="contained"
         size="large"
       />
-    </div>
+    </TitleSubtitleWrapper>
   );
 }
