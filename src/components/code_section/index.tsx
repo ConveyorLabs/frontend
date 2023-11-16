@@ -9,21 +9,23 @@ type CodeSectionProps = {
   children: string;
 };
 
+const customStyle = {
+  borderRadius: "10px",
+  background: "transparent",
+  border: "1px solid white",
+  fontSize: "17px",
+  height: "fit-content",
+  overflow: "none",
+  display: "flex",
+  maxWidth: "fit-content",
+};
+
 function CodeSeparation({ children }: CodeSectionProps) {
   return (
     <SyntaxHighlighter
       language="json"
       style={atomOneDark}
-      customStyle={{
-        borderRadius: "10px",
-        background: "transparent",
-        border: "1px solid white",
-        fontSize: "17px",
-        height: "fit-content",
-        overflow: "none",
-        display: "flex",
-        maxWidth: "fit-content",
-      }}
+      customStyle={customStyle}
     >
       {children}
     </SyntaxHighlighter>
@@ -40,6 +42,7 @@ export default function CodeSection() {
         buttonText="Check API Docs"
         buttonUrl="https://docs.conveyor.finance/api"
       />
+      <div style={{ height: "50px" }} />
       <CodeWrapper>
         <CodeSeparation>{codeString}</CodeSeparation>
         <CodeSeparation>{codeString2}</CodeSeparation>
