@@ -5,6 +5,7 @@ import omnibot from "../../assets/partners/png/OmnibotX.png";
 import ubd from "../../assets/partners/png/UBD.png";
 import monkeyfi from "../../assets/partners/png/Monkeyfi.png";
 import moon from "../../assets/partners/svg/Moon.svg";
+import unidex from "../../assets/partners/svg/UniDex.svg";
 
 //backers
 import mhventures from "../../assets/backers/svg/MHVentures.svg";
@@ -22,16 +23,16 @@ export const partners = [
     text: "",
   },
   {
+    name: "UniDex",
+    url: "https://unidex.exchange",
+    img: unidex,
+    text: "",
+  },
+  {
     name: "OmniBotX",
     url: "https://www.omnibotx.io",
     img: omnibot,
     text: "OmniBotX",
-  },
-  {
-    name: "Aori",
-    url: "https://aori.io",
-    img: aori,
-    text: "",
   },
   {
     name: "Moon",
@@ -40,9 +41,9 @@ export const partners = [
     text: "",
   },
   {
-    name: "UBD",
-    url: "https://ubdn.com",
-    img: ubd,
+    name: "Aori",
+    url: "https://aori.io",
+    img: aori,
     text: "",
   },
   {
