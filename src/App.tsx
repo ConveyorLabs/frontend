@@ -6,6 +6,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import Partners from "./components/partners";
 import CodeSection from "./components/code_section";
+import { Feature } from "./components/feature";
 // import backgroundImage from "./assets/webp/fractal-background.webp";
 
 const PageWrapper = styled.div`
@@ -20,6 +21,8 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
+      <div style={{ height: "150px" }} />
+      <Feature />
       <div style={{ height: "150px" }} />
       <Partners />
       <div style={{ height: "150px" }} />

@@ -3,7 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { codeString, codeString2 } from "./data";
 import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtitle";
-import { FeatureWrapper } from "../styled";
+import { FeatureWrapper } from "../FeatureWrapper";
 
 type CodeSectionProps = {
   children: string;

@@ -11,7 +11,7 @@ import {
 } from "./styled";
 import React from "react";
 import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtitle";
-import { FeatureWrapper } from "../styled";
+import { FeatureWrapper } from "../FeatureWrapper";
 
 interface PartnerData {
   id?: string;
