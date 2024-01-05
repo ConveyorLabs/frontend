@@ -22,7 +22,7 @@ export const Social = {
   },
   Discord: {
     icon: discord,
-    link: "https://discord.gg/w4hNNnzAax",
+    link: "https://discord.gg/8kSRuySRUe",
     alt: "Discord",
   },
 };

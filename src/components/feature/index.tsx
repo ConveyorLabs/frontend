@@ -1,6 +1,6 @@
 import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtitle";
 import { FeatureWrapper } from "../FeatureWrapper";
-import wireframe from "../../assets/wireframe2.png";
+import wireframe from "../../assets/wireframe.png";
 
 export function Feature() {
   return (
