@@ -45,7 +45,7 @@ export default function Hero() {
               rel="noreferrer noopener"
             >
               <ChainIcon
-                style={{ height: "37px" }}
+                style={{ height: "37px", filter: "grayscale(1.0)" }}
                 src={platform.icon}
                 alt={platform.alt}
               />

@@ -102,8 +102,6 @@ export const Subtitle = styled.div`
 `;
 
 export const ChainIcon = styled.img`
-  width: 30px;
-  border-radius: 50%;
   @media ${device.mobile} {
     width: 50px;
     height: 50px;
