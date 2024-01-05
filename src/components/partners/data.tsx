@@ -2,10 +2,10 @@
 import caddi from "../../assets/partners/svg/Caddi.svg";
 import aori from "../../assets/partners/svg/Aori.svg";
 import omnibot from "../../assets/partners/png/OmnibotX.png";
-import ubd from "../../assets/partners/png/UBD.png";
 import monkeyfi from "../../assets/partners/png/Monkeyfi.png";
 import moon from "../../assets/partners/svg/Moon.svg";
 import unidex from "../../assets/partners/svg/UniDex.svg";
+import meanfinance from "../../assets/partners/png/MeanFinance.png";
 
 //backers
 import mhventures from "../../assets/backers/svg/MHVentures.svg";
@@ -51,6 +51,12 @@ export const partners = [
     url: "https://monkeyfi.io",
     img: monkeyfi,
     text: "Monkey.fi",
+  },
+  {
+    name: "Mean Finance",
+    url: "https://mean.finance",
+    img: meanfinance,
+    text: "",
   },
 ];
 
