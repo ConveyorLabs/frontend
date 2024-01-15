@@ -8,10 +8,12 @@ import {
   ChainIcon,
   TextWrapper,
   FlexRow,
+  FlexRowCTA,
 } from "./styled";
 
 import { Chains, Social } from "./data";
 import { ButtonGroup } from "../ButtonGroup";
+import { CustomSubstackEmbed } from "../substack";
 
 export default function Hero() {
   return (
@@ -30,12 +32,16 @@ export default function Hero() {
         </FlexRow>
       </TextWrapper>
       <CtaWrapper>
-        <ButtonGroup
-          text="Launch App"
-          url="https://app.conveyor.finance"
-          variant="contained"
-          size="large"
-        />
+        <FlexRowCTA>
+          <ButtonGroup
+            text="Launch App"
+            url="https://app.conveyor.finance"
+            variant="contained"
+            size="large"
+          />
+          <CustomSubstackEmbed />
+        </FlexRowCTA>
+
         <FlexRow>
           {Object.values(Social).map((platform, index) => (
             <Link

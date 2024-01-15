@@ -71,6 +71,16 @@ export const FlexRow = styled.div`
   }
 `;
 
+export const FlexRowCTA = styled(FlexRow)`
+  @media ${device.mobile} {
+    flex-direction: column;
+    gap: 25px;
+  }
+  @media ${device.desktop} {
+    flex-direction: row;
+  }
+`;
+
 export const SuperTitle = styled.div`
   font-weight: 500;
   font-size: 12px;

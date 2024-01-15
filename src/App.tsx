@@ -7,7 +7,6 @@ import Hero from "./components/hero";
 import Partners from "./components/partners";
 import CodeSection from "./components/code_section";
 import { Feature } from "./components/feature";
-// import backgroundImage from "./assets/webp/fractal-background.webp";
 
 const PageWrapper = styled.div`
   background: #0e003d;
