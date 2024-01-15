@@ -12,13 +12,13 @@ export const CustomSubstackEmbed: React.FC = () => {
     window.CustomSubstackWidget = {
       substackUrl: "conveyor.substack.com",
       placeholder: "example@gmail.com",
-      buttonText: "Subscribe",
+      buttonText: "SUBSCRIBE",
       theme: "custom",
       colors: {
-        primary: "#FFFFFF",
+        primary: "#1976d2",
         input: "none",
         email: "#BBBBBB",
-        text: "#000000",
+        text: "#ffffff",
       },
     };
 

@@ -33,13 +33,13 @@ export default function Hero() {
       </TextWrapper>
       <CtaWrapper>
         <FlexRowCTA>
+          <CustomSubstackEmbed />
           <ButtonGroup
             text="Launch App"
             url="https://app.conveyor.finance"
             variant="contained"
             size="large"
           />
-          <CustomSubstackEmbed />
         </FlexRowCTA>
 
         <FlexRow>

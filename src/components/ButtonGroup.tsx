@@ -16,7 +16,7 @@ export function ButtonGroup({ text, url, variant, size }: ButtonGroupProps) {
       target="_blank"
       rel="noreferrer noopener"
     >
-      <Button variant={variant} size={size}>
+      <Button style={{ height: "48px" }} variant={variant} size={size}>
         {text}
       </Button>
     </Link>

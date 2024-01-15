@@ -44,11 +44,9 @@ export const CtaWrapper = styled(AbsolutePositionedFlexColumn)`
   align-items: center;
   bottom: 35px;
   @media ${device.mobile} {
-    height: 125px;
     flex-direction: column;
   }
   @media ${device.desktop} {
-    height: unset;
     flex-direction: row;
   }
 `;
@@ -74,7 +72,7 @@ export const FlexRow = styled.div`
 export const FlexRowCTA = styled(FlexRow)`
   @media ${device.mobile} {
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     height: fit-content;
     margin-bottom: 15px;
   }
