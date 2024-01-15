@@ -75,9 +75,12 @@ export const FlexRowCTA = styled(FlexRow)`
   @media ${device.mobile} {
     flex-direction: column;
     gap: 25px;
+    height: fit-content;
+    margin-bottom: 15px;
   }
   @media ${device.desktop} {
     flex-direction: row;
+    margin-bottom: unset;
   }
 `;
 
