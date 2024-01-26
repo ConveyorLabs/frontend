@@ -23,7 +23,8 @@ export default function Hero() {
         <Title>The Hyper-Efficient Ecosystem For Cheaper DEX Swaps</Title>
         <Subtitle>
           Conveyor meta-aggregates several aggregators and 100's of on-chain
-          DEX's in order to provide the best prices on swaps.
+          DEX's in order to provide the best prices and lowest gas fees on
+          swaps.
         </Subtitle>
         <FlexRow>
           {Object.values(Chains).map((chain, index) => (
