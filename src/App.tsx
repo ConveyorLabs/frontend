@@ -7,6 +7,7 @@ import Hero from "./components/hero";
 import Partners from "./components/partners";
 import CodeSection from "./components/code_section";
 import { Feature } from "./components/feature";
+import { Metrics } from "./components/metrics";
 
 const PageWrapper = styled.div`
   background: #0e003d;
@@ -20,6 +21,8 @@ const App = () => {
     <PageWrapper>
       <Header />
       <Hero />
+      <div style={{ height: "50px" }} />
+      <Metrics />
       <div style={{ height: "150px" }} />
       <Feature />
       <div style={{ height: "150px" }} />

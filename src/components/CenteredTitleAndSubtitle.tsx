@@ -30,10 +30,12 @@ export default function CenteredTitleAndSubtitle({
         style={{
           textAlign: "center",
           fontFamily: "Inter",
+          fontSize: "40px",
         }}
       >
         {title}
       </Title>
+      <div style={{ height: "25px" }} />
       <Title
         style={{
           textAlign: "center",

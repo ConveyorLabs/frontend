@@ -41,7 +41,6 @@ export default function Hero() {
             size="large"
           />
         </FlexRowCTA>
-
         <FlexRow>
           {Object.values(Social).map((platform, index) => (
             <Link
