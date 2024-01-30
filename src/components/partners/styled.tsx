@@ -9,12 +9,7 @@ export const Title = styled.div`
 
 export const Name = styled.div`
   font-family: Inter;
-  @media ${device.mobile} {
-    font-size: 25px;
-  }
-  @media ${device.desktop} {
-    font-size: 25px;
-  }
+  font-size: 25px;
 `;
 
 export const StyledImg = styled.img`
@@ -38,8 +33,7 @@ export const StyledGridItem = styled(Grid)`
 `;
 
 export const StyledDiv = styled.div`
-  width: 100%;
-  max-width: 550px;
+  padding: 20px 0px;
   border: white 1px solid;
   border-radius: 10px;
 `;
@@ -48,13 +42,12 @@ export const StyledDiv2 = styled.div`
   display: flex;
   gap: 45px;
   width: 100%;
+  flex-direction: row;
   @media ${device.mobile} {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   @media ${device.tablet} {
-    flex-direction: row;
     justify-content: space-between;
   }
 `;

@@ -2,16 +2,16 @@
 import caddi from "../../assets/partners/svg/Caddi.svg";
 import aori from "../../assets/partners/svg/Aori.svg";
 import omnibot from "../../assets/partners/png/OmnibotX.png";
-import monkeyfi from "../../assets/partners/png/Monkeyfi.png";
+import monkeyfi from "../../assets/partners/webp/MonkeyFi.webp";
 import moon from "../../assets/partners/svg/Moon.svg";
 import unidex from "../../assets/partners/svg/UniDex.svg";
-import meanfinance from "../../assets/partners/png/MeanFinance.png";
+import meanfinance from "../../assets/partners/svg/MeanFinance.svg";
 
 //backers
 import mhventures from "../../assets/backers/svg/MHVentures.svg";
 import orangedao from "../../assets/backers/svg/OrangeDAO.svg";
 import threehdao from "../../assets/backers/svg/300dao.svg";
-import quantstamp from "../../assets/backers/png/Quantstamp.png";
+import quantstamp from "../../assets/backers/svg/Quantstamp.svg";
 import insignius from "../../assets/backers/png/Insignius.png";
 import sandhill from "../../assets/backers/svg/sandhill.svg";
 
@@ -50,7 +50,7 @@ export const partners = [
     name: "MonkeyFi",
     url: "https://monkeyfi.io",
     img: monkeyfi,
-    text: "Monkey.fi",
+    text: "",
   },
   {
     name: "Mean Finance",
@@ -89,7 +89,7 @@ export const backers = [
     name: "Quantstamp",
     url: "https://quantstamp.com",
     img: quantstamp,
-    text: "Quantstamp",
+    text: "",
   },
   {
     name: "300 DAO",
