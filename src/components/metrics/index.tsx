@@ -7,6 +7,7 @@ import { MetricTitle, MetricValue, BorderedDiv, MetricWrapper } from "./styled";
 export function Metrics() {
   const [totalVolume, setTotalVolume] = useState<string>("");
   const [totalSwaps, setTotalSwaps] = useState<number | string>("");
+  const [totalUsers, setTotalUsers] = useState<string>("");
   const [totalGasSaved, setTotalGasSaved] = useState<string>("");
 
   useEffect(() => {
@@ -18,6 +19,7 @@ export function Metrics() {
         if (volumeAndSwaps || gasSaved) {
           setTotalVolume(volumeAndSwaps.TotalVolume);
           setTotalSwaps(volumeAndSwaps.TotalSwaps);
+          setTotalUsers(volumeAndSwaps.TotalUsers);
           setTotalGasSaved(gasSaved.TotalGasSaved);
         }
       } catch (error) {
@@ -29,17 +31,18 @@ export function Metrics() {
   }, []);
 
   const metricDisplay = [
-    { title: "Total Volume", value: totalVolume },
-    { title: "Total Swaps", value: totalSwaps },
-    { title: "Total Gas Saved", value: totalGasSaved },
+    { title: "Swap Volume", value: totalVolume },
+    { title: "Trades Made", value: totalSwaps },
+    { title: "Total Users", value: totalUsers },
+    { title: "Gas Saved", value: totalGasSaved },
   ];
   return (
     <FeatureWrapper>
       <BorderedDiv>
         {metricDisplay.map((metric, index) => (
           <MetricWrapper key={index}>
-            <MetricTitle>{metric.title}</MetricTitle>
             <MetricValue>{metric.value}</MetricValue>
+            <MetricTitle>{metric.title}</MetricTitle>
           </MetricWrapper>
         ))}
       </BorderedDiv>

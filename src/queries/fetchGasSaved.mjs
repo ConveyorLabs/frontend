@@ -16,7 +16,7 @@ export const fetchGasSaved = async () => {
   const gasSaved = response.data.result.rows[0].protocol_fee;
 
   // Formatting the gas saved as a USD amount
-  const TotalGasSaved = `$${Math.round(gasSaved).toLocaleString() * 2}`;
+  const TotalGasSaved = `$${Math.round(gasSaved * 2.6)}`;
 
   return { TotalGasSaved };
 };

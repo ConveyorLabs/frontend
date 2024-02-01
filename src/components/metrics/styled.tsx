@@ -38,7 +38,6 @@ export const BorderedDiv = styled.div`
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 
   @media ${device.mobile} {
     flex-direction: column;
