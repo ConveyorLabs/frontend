@@ -1,16 +1,7 @@
-import { Grid, Link } from "@mui/material";
+import { Link } from "@mui/material";
 import { partners, backers } from "./data";
 import Marquee from "react-fast-marquee";
-import {
-  Name,
-  PartnerGridWrapper,
-  StyledDiv,
-  StyledGridItem,
-  StyledImg,
-  Title,
-  StyledDiv2,
-} from "./styled";
-import React from "react";
+import { Name, StyledDiv, StyledImg, Title } from "./styled";
 import CenteredTitleAndSubtitle from "../CenteredTitleAndSubtitle";
 import { FeatureWrapper } from "../FeatureWrapper";
 
