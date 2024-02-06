@@ -2,7 +2,7 @@
 import caddi from "../../assets/partners/svg/Caddi.svg";
 import aori from "../../assets/partners/svg/Aori.svg";
 import omnibot from "../../assets/partners/png/OmnibotX.png";
-import monkeyfi from "../../assets/partners/png/MonkeyFi.png";
+// import monkeyfi from "../../assets/partners/png/MonkeyFi.png";
 import moon from "../../assets/partners/svg/Moon.svg";
 import unidex from "../../assets/partners/svg/UniDex.svg";
 import meanfinance from "../../assets/partners/svg/MeanFinance.svg";
@@ -46,12 +46,12 @@ export const partners = [
     img: aori,
     text: "",
   },
-  {
-    name: "MonkeyFi",
-    url: "https://monkeyfi.io",
-    img: monkeyfi,
-    text: "",
-  },
+  // {
+  //   name: "MonkeyFi",
+  //   url: "https://monkeyfi.io",
+  //   img: monkeyfi,
+  //   text: "",
+  // },
   {
     name: "Mean Finance",
     url: "https://mean.finance",
