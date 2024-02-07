@@ -7,6 +7,8 @@ import moon from "../../assets/partners/svg/Moon.svg";
 import unidex from "../../assets/partners/svg/UniDex.svg";
 import meanfinance from "../../assets/partners/svg/MeanFinance.svg";
 import rainmaker from "../../assets/partners/png/rainmaker.png";
+import xenify from "../../assets/partners/svg/xenify.svg";
+import swoop from "../../assets/partners/png/swoop.png";
 
 //backers
 import mhventures from "../../assets/backers/svg/MHVentures.svg";
@@ -36,10 +38,22 @@ export const partners = [
     text: "",
   },
   {
-    name: "OmniBotX",
-    url: "https://www.omnibotx.io",
-    img: omnibot,
-    text: "OmniBotX",
+    name: "Mean Finance",
+    url: "https://mean.finance",
+    img: meanfinance,
+    text: "",
+  },
+  {
+    name: "Xenify",
+    url: "https://www.xenify.io",
+    img: xenify,
+    text: "",
+  },
+  {
+    name: "Swoop",
+    url: "https://www.swoop.exchange",
+    img: swoop,
+    text: "",
   },
   {
     name: "Moon",
@@ -60,10 +74,10 @@ export const partners = [
     text: "",
   },
   {
-    name: "Mean Finance",
-    url: "https://mean.finance",
-    img: meanfinance,
-    text: "",
+    name: "OmniBotX",
+    url: "https://www.omnibotx.io",
+    img: omnibot,
+    text: "OmniBotX",
   },
 ];
 
