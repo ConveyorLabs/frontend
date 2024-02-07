@@ -6,6 +6,7 @@ import monkey from "../../assets/partners/png/monkey.png";
 import moon from "../../assets/partners/svg/Moon.svg";
 import unidex from "../../assets/partners/svg/UniDex.svg";
 import meanfinance from "../../assets/partners/svg/MeanFinance.svg";
+import rainmaker from "../../assets/partners/png/rainmaker.png";
 
 //backers
 import mhventures from "../../assets/backers/svg/MHVentures.svg";
@@ -20,6 +21,12 @@ export const partners = [
     name: "Caddi",
     url: "https://caddi.fi",
     img: caddi,
+    text: "",
+  },
+  {
+    name: "Rainmaker",
+    url: "https://rainmaker.nyc",
+    img: rainmaker,
     text: "",
   },
   {
