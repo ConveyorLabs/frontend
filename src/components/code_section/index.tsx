@@ -13,11 +13,11 @@ const customStyle = {
   borderRadius: "10px",
   background: "transparent",
   border: "1px solid white",
-  fontSize: "17px",
+  fontSize: "16.5px",
   height: "fit-content",
   overflow: "none",
   display: "flex",
-  maxWidth: "fit-content",
+  minWidth: "fit-content",
 };
 
 function CodeSeparation({ children }: CodeSectionProps) {

@@ -8,6 +8,8 @@ export const CodeWrapper = styled.div`
   max-width: 1100px;
   display: flex;
   text-align: left;
+  align-content: center;
+  margin: 0 auto;
   @media ${device.mobile} {
     flex-direction: column;
     font-size: 15px;
