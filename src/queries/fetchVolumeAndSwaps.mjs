@@ -32,21 +32,19 @@ export const fetchVolumeAndSwaps = async () => {
     }
 
     const TotalVolume = formatCurrency(totalRow.lifetime_volume);
-    console.log("Total Volume:", TotalVolume);
     const TotalSwaps = totalRow.lifetime_swaps;
-    console.log("Total Swaps:", TotalSwaps);
     const TotalUsers = totalRow.lifetime_users;
-    console.log("Total Users:", TotalUsers);
+    const TotalGasSaved = `$${Math.round(totalRow.lifetime_gas_savings)}`;
 
-    return { TotalVolume, TotalSwaps, TotalUsers };
+    return { TotalVolume, TotalSwaps, TotalUsers, TotalGasSaved };
   } catch (error) {
     console.error("An error occurred:", error);
     // Handle the error gracefully or return default values
     const TotalVolume = "$1.53M+";
     const TotalSwaps = "2597";
     const TotalUsers = "1341";
-    console.log("Total Users:", TotalUsers);
+    const TotalGasSaved = "$1345";
 
-    return { TotalVolume, TotalSwaps, TotalUsers };
+    return { TotalVolume, TotalSwaps, TotalUsers, TotalGasSaved };
   }
 };

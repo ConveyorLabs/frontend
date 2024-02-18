@@ -1,7 +1,6 @@
 import { fetchVolumeAndSwaps } from "src/queries/fetchVolumeAndSwaps.mjs";
 import { FeatureWrapper } from "../FeatureWrapper";
 import { useState, useEffect } from "react";
-import { fetchGasSaved } from "src/queries/fetchGasSaved.mjs";
 import { MetricTitle, MetricValue, BorderedDiv, MetricWrapper } from "./styled";
 
 export function Metrics() {
@@ -14,13 +13,12 @@ export function Metrics() {
     const fetchData = async () => {
       try {
         const volumeAndSwaps = await fetchVolumeAndSwaps();
-        const gasSaved = await fetchGasSaved();
 
-        if (volumeAndSwaps || gasSaved) {
+        if (volumeAndSwaps) {
           setTotalVolume(volumeAndSwaps.TotalVolume);
           setTotalSwaps(volumeAndSwaps.TotalSwaps);
           setTotalUsers(volumeAndSwaps.TotalUsers);
-          setTotalGasSaved(gasSaved.TotalGasSaved);
+          setTotalGasSaved(volumeAndSwaps.TotalGasSaved);
         }
       } catch (error) {
         console.error("Error fetching Dune metrics:", error);
