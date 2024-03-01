@@ -6,7 +6,6 @@ export const MetricWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   @media ${device.tablet} {
     width: 33.33%;
   }

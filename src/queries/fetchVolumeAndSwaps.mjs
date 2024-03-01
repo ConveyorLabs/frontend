@@ -31,10 +31,20 @@ export const fetchVolumeAndSwaps = async () => {
       throw new Error("Total row not found in response");
     }
 
+    const formatter = new Intl.NumberFormat("en-US", {
+      style: "decimal", // Use "currency" for TotalGasSaved if you want currency formatting
+      maximumFractionDigits: 0, // Adjust this value for decimal places, if needed
+    });
+
     const TotalVolume = formatCurrency(totalRow.lifetime_volume);
-    const TotalSwaps = totalRow.lifetime_swaps;
-    const TotalUsers = totalRow.lifetime_users;
-    const TotalGasSaved = `$${Math.round(totalRow.lifetime_gas_savings)}`;
+    const TotalSwaps = formatter.format(totalRow.lifetime_swaps);
+    const TotalUsers = formatter.format(totalRow.lifetime_users);
+    // For TotalGasSaved, assuming you want to round it and add a dollar sign
+    const TotalGasSaved = `$${formatter.format(
+      Math.round(totalRow.lifetime_gas_savings)
+    )}`;
+
+    console.log(TotalVolume, TotalSwaps, TotalUsers, TotalGasSaved);
 
     return { TotalVolume, TotalSwaps, TotalUsers, TotalGasSaved };
   } catch (error) {
