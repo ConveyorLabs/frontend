@@ -9,6 +9,7 @@ import meanfinance from "../../assets/partners/svg/MeanFinance.svg";
 import rainmaker from "../../assets/partners/png/rainmaker.png";
 import xenify from "../../assets/partners/svg/xenify.svg";
 import swoop from "../../assets/partners/png/swoop.png";
+import contango from "../../assets/partners/png/contango.png";
 
 //backers
 import mhventures from "../../assets/backers/svg/MHVentures.svg";
@@ -79,6 +80,7 @@ export const partners = [
     img: omnibot,
     text: "OmniBotX",
   },
+  { name: "Contango", url: "https://contango.xyz", img: contango, text: "" },
 ];
 
 export const backers = [
